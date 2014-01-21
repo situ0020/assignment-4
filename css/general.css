@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1, 
+.main,
+.copyright{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+h1 {
+	color: #FFFFFF;
+	margin: 0 1rem;
+	padding: 2rem 1rem;
+	font-size: 180%;
+}
+
+header {
+	background-color: #505050;
+}
+
+img{
+	width: 100%;
+}
+
+.main {
+	padding-top: 2rem;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 5%;
+	
+	height: 40px;
+	width: 40px;
+	background: #505050 url('../images/nav-icon.svg') no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background-color: #000000;
+}
+
+.nav a,
+.nac a:link,
+.nav a:visited {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	color: #FFF;
+	background-color: #000;
+	text-decoration: none;
+	border: 1px solid #FFF;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:visited {
+	background-color: #000000;
+}
+
+.nav-top {
+	display: none;
+}
+
+.nav-top[data-state="expanded"] {
+	display: block
+}
+
+footer {
+	background-color: #505050;
+	padding-top: .3rem;
+}
+
+strong {
+	font-weight: bold;
+}
+
+table td, 
+table th {
+    padding: 4px;
+	text-align: left;
+}
+
+td {
+	font-size: 0.75rem;
+}
+
+h2 {
+	background-color: #BCBCBC;
+	padding: 1rem;
+}
+
+.logo {
+	width: 60px;
+	margin: 1rem 5%;
+	float: left;
+}
+
+.slogan {
+	float: right;
+	width: 80%;
+	margin: 0rem 5%;
+}
+
+@media only screen and (min-width: 25em) {
+	.nav {
+		overflow: auto;
+	}
+	
+	.nav li {
+		float: left;
+		width: 33.33%;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 22em) {
+	.slogan {
+		float: right;
+		width: 50%;
+		margin: .3rem 10%;
+	}
+}
+
+@media only screen and (min-width: 15em) {
+	.slogan {
+		width: 40%;
+		margin: 0rem 10%;
+	}
+}
+
+@media only screen and (min-width: 16.875em) {
+	.slogan {
+		width: 50%;
+		margin: .5rem 10% 0rem 5%;
+	}
+}
+
+@media only screen and (min-width: 21.875em) {
+	.slogan {
+		width: 50%;
+		margin: .5rem 20% 0rem 0%;
+	}
+}
+
+@media only screen and (min-width: 25em) {
+	h3 {
+		font-size: 25px;
+	}
+	
+	.slogan {
+		float: right;
+		width: 75%;
+		margin: 0rem 0%;
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	.nav {
+		background-color: #000;
+		text-align: center;
+	}
+	
+	.nav li {
+		display: inline-block;
+		float: none;
+		width: auto;
+		margin: 0;
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited {
+		border-top: 0;
+	}
+	
+	.nav-top {
+		float: right;
+		margin-right: 5%;
+	}
+	
+	h1 {
+		float: left;
+		width: auto;
+		margin-left: 5%;
+	}
+	
+	header {
+		overflow: auto;
+	}
+
+	.slogan {
+		float: right;
+		width: 70%;
+		margin: .2rem 10% 0rem 0%;
+	}
+	
+	h3 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 50em) {
+	.slogan {
+		float: right;
+		width: 70%;
+		margin: 0rem 10% 0rem 0%;
+	}
+	
+	h3 {
+		font-size: 40px;
+	}
+	
+	.logo {
+		width: 60px;
+		margin: 2rem 5%;
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 53.75em) {
+	.main {
+		overflow: auto;
+	}
+	
+	.left {
+		float: left;
+		width: 50%;
+	}
+	
+	.right {
+		float: right;
+		width: 50%;
+	}
+}
